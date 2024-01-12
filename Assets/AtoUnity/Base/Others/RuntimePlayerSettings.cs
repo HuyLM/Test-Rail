@@ -15,8 +15,8 @@ namespace AtoGame.Base
     {
         // List here the player settings you want to retrieve at runtime.
         // Mind that their value will be automatically overridden!
-        public const string iOSBuildVersion = "434fd";
-        public const int AndroidBundleVersionCode = 3;
+        public const string iOSBuildVersion = "0";
+        public const int AndroidBundleVersionCode = 1;
 
 #if UNITY_EDITOR
 

@@ -47,9 +47,12 @@ public class TunnelRailCell : RailCell
         return null;
     }
 
-    public override void OnMoveToTarget(TrainCarriage trainCarriage)
+    public override void OnMoveToTarget(TrainCarriage trainCarriage, RailCell inputCell)
     {
-        trainCarriage.TeleportTo(connectedTunnel.GetTeleportPoint());
+        if(inputCell != connectedTunnel)
+        {
+            trainCarriage.TeleportTo(connectedTunnel.GetTeleportPoint());
+        }
     }
 
     public Transform GetTeleportPoint()
